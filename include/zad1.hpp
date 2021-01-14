@@ -3,17 +3,10 @@
 // Zad2
 // tutaj definicja klasy Makaron
 // BEZ definicji metody gotujMakaron (tylko z deklaracją)
-class Makaron
-{public:
 
- virtual double ileMaki(unsigned P) const
-{
-return P * L * W * (1. - R) * C;
-}
-};
 // Zad1
 // tutaj definicja klasy Tagliatelle
-class Tagliatelle : public Makaron
+class Tagliatelle
 {
   double L, W, R;
   const double C;
