@@ -12,9 +12,9 @@ double ileMaki(unsigned P) const
   return (double)P;
 }
 
-}
+};
 // tutaj definicja metody gotujMakaron
-static Makaron* Makaron::gotujMakaron (const std::string& a)
+Makaron* Makaron::gotujMakaron (const std::string& a)
 {
 if(a.front()==a.back())
 return new Tagliatelle (3.14,0.42,0.1);
