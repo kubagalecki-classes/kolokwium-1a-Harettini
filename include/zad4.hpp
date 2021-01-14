@@ -18,10 +18,4 @@ int i=1,y;
     throw(yy);
     return M;
   }
-  catch(int a)
-  {return a;}
-  
-    catch(double b)
-    {return b;}
- 
 }
