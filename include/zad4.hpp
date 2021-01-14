@@ -6,7 +6,7 @@
 double obliczMake(std::vector<Tagliatelle>& V)
 {double M, i=1;
   for (auto it = V.rbegin(); it != V.rend(); ++it)
-  M=M+i*it->ileMaki();
+  M=M+it->ileMaki(i);
   try
   {
     if(M>100)
