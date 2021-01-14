@@ -3,20 +3,25 @@
 #include <vector>
 
 // tutaj funkcja obliczMake
-double obliczMake(std::vector<Tagliatelle>& V)
-{double M, i=1;
-  for (auto it = V.rbegin(); it != V.rend(); ++it)
-  M=M+it->ileMaki(i);
+double obliczMake(const std::vector<Tagliatelle>& V)
+{double M; 
+int i=1;
+  for (auto it = V.crbegin(); it != V.crend(); ++it)
+  {M=M+it->ileMaki(i);
+  i++;
+  }
   try
   {
     if(M>100)
-    throw((int)1);
+    throw(i);
     if(M>50)
-    throw((double)1);
+    throw(M/2);
     return M;
   }
-  cauch(int a)
-  return a;
-    cauch(int b)
-  return b;
+  catch(const int a)
+  {return a;}
+  
+    catch(const double b)
+    {return b;}
+ 
 }
