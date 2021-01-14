@@ -5,12 +5,14 @@
 // BEZ definicji metody gotujMakaron (tylko z deklaracją)
 class Makaron
 {public:
- virtual double ileMaki(unsigned P) const
-{}
+ virtual double ileMaki(unsigned P) const = 0;
+ Makaron* gotujMakaron (const std::string a);
+ ~Makaron (){delete this;}
 };
+
 // Zad1
 // tutaj definicja klasy Tagliatelle
-class Tagliatelle
+class Tagliatelle : public Makaron
 {
   double L, W, R;
   static const double C;
