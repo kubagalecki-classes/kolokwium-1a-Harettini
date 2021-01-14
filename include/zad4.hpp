@@ -4,8 +4,8 @@
 
 // tutaj funkcja obliczMake
 double obliczMake(const std::vector<Tagliatelle>& V)
-{double M; 
-int i=1;
+{double M,yy; 
+int i=1,y;
   for (auto it = V.crbegin(); it != V.crend(); ++it)
   {M=M+it->ileMaki(i);
   i++;
@@ -13,15 +13,15 @@ int i=1;
   try
   {
     if(M>100)
-    throw(i);
+    throw(y);
     if(M>50)
-    throw(M/2);
+    throw(yy);
     return M;
   }
-  catch(const int a)
+  catch(int a)
   {return a;}
   
-    catch(const double b)
+    catch(double b)
     {return b;}
  
 }
