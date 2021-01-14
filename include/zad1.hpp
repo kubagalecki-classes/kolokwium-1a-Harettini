@@ -6,8 +6,8 @@
 class Makaron
 {public:
  virtual double ileMaki(unsigned P) const = 0;
- Makaron* gotujMakaron (const std::string a);
- ~Makaron (){delete this;}
+ static Makaron* gotujMakaron (const std::string& a);
+ ~Makaron (){}
 };
 
 // Zad1
