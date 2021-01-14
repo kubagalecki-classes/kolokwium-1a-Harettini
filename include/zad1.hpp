@@ -16,7 +16,7 @@ return P * L * W * (1. - R) * C;
 class Tagliatelle : public Makaron
 {
   double L, W, R;
- static const double C;
+  const double C;
   public:
   Tagliatelle() : L(0.5), W(0.5), R(0.5) {};
 Tagliatelle(double l, double w, double r) : L(l), W(w), R(r) {}
